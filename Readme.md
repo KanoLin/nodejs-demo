@@ -3,7 +3,7 @@
 ---
 写在开头：
 
-练习项目，config直接传了，然后给数据库配一下里面的用户，npm install，test里用mocha还没写完，参数验证这块没做
+练习项目，config直接传了，然后给数据库配一下里面的用户，npm install，init.js是将data.json数据插入数据库，test里用mocha的还没写完，参数验证这块没做
 
 ---
 
