@@ -14,7 +14,8 @@ var sequelize=new Sequelize(config.database,config.username,config.password,{
     define:{
         underscored:true,
         charset:'utf8mb4',
-    }
+    },
+    logging: false
 });
 
 module.exports=sequelize;

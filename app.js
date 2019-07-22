@@ -5,6 +5,6 @@ const app=new Koa();
 
 app.use(bodyParser());
 app.use(routes.routes()).use(routes.allowedMethods());
-app.listen(3000);
-console.log('app started at port 3000...');
+// app.listen(3000);
+// console.log('app started at port 3000...');
 module.exports=app;

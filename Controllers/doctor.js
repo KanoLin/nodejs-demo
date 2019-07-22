@@ -4,8 +4,6 @@ var doctorController={
     insert:async (ctx,next)=>{
         var res={};
         try{
-            // console.log('*****');
-            // console.log(ctx.request.body);
             await Staff.create(ctx.request.body);
             res={
                 err_code:0,
@@ -16,7 +14,6 @@ var doctorController={
                 err_code:1,
                 err_msg:'插入失败'
             }
-            console.log(e);
         }
         ctx.response.body=JSON.stringify(res);
     },
@@ -41,7 +38,6 @@ var doctorController={
                 err_code:1,
                 err_msg:'删除失败'
             }
-            // console.log(e);
         }
         ctx.response.body=JSON.stringify(res);
     },
@@ -70,7 +66,6 @@ var doctorController={
                 err_code:1,
                 err_msg:'更新失败'
             }
-            console.log(e);
         }
         ctx.response.body=JSON.stringify(res);
     },
