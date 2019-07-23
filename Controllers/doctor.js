@@ -1,4 +1,5 @@
-const Staff=require('../Models/Staff');
+const model=require('../model');
+var Staff=model.Staff;
 
 var doctorController={
     insert:async (ctx,next)=>{

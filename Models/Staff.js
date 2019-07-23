@@ -1,7 +1,7 @@
 const Sequelize=require('sequelize');
-const sequelize=require('../db');
+const db=require('../db');
 
-var Staff=sequelize.define('staff',{
+var Staff=db.defineModel('staff',{
     name:{
         type:Sequelize.STRING(10),
         unique:true,
@@ -13,8 +13,6 @@ var Staff=sequelize.define('staff',{
     camp:Sequelize.STRING(10),
     type:Sequelize.STRING(10),
     level:Sequelize.SMALLINT,
-},{
-    timestamps:false,
 });
 
 module.exports=Staff;

@@ -1,14 +1,16 @@
-const Staff=require('../Models/Staff');
+const model=require('../model');
+var Staff=model.Staff;
 
 var staffController={
     search:async (ctx,next)=>{
         var res={};
         try{
-            var info=await Staff.findAll({
+            var info_list=await Staff.findAll({
+                attributes:['name','sex','camp','type','level'],
                 where:ctx.query
             });
             res={
-                info_list:info,
+                info_list:info_list,
                 err_code:0,
                 err_msg:''
             }

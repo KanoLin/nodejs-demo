@@ -16,7 +16,6 @@ describe('#test koa app', () => {
                 .get('/staff?name=阿米娅')
                 .expect(200,{
                     info_list:[{
-                        id:54,
                         name:"阿米娅",
                         sex:"女",
                         camp:"罗德岛",

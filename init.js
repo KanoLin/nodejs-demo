@@ -1,5 +1,7 @@
 const fs=require('fs');
-const Staff=require('./Models/Staff');
+const model=require('./model');
+model.sync();
+var Staff=model.Staff;
 
 fs.readFile('data.json',(err,data)=>{
     var staff=JSON.parse(data.toString());
